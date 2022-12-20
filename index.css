@@ -1,0 +1,600 @@
+:root{
+
+    --primary-color : #335eea;
+    --primary-dark : #1746e0;
+    --primary-light : #d3ddff;
+    --blue-gray : #506590;
+
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+.btn:hover,
+.btn:focus
+{
+    color: white;
+    box-shadow: 0 0 6px var(--blue-gray);
+    transform: translateY(-2px);
+}
+
+
+#homelink{
+
+    color: var(--primary-color);
+
+}
+
+nav ul a{
+
+    font-weight: 700 !important;
+
+}
+
+nav ul a:hover,
+nav ul a:focus,
+nav ul a:active{
+
+    color: var(--primary-color) !important;
+
+}
+
+nav .btn{
+
+background-color: var(--primary-color)  ;
+color: white;
+font-size: 19px;
+
+}
+
+nav .btn:hover,
+nav .btn:focus
+{
+
+   background-color: var(--primary-dark); 
+  
+}
+
+nav .navbar-brand{
+
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: x-large;
+
+}
+
+nav .navbar-brand:hover{
+
+    color: var(--primary-color);
+
+}
+
+#home{
+
+    padding-top: 80px;
+
+}
+
+#home span{
+
+    color: var(--primary-color);
+
+}
+
+#home #btn-contact{
+
+    background-color: var(--primary-color);
+    color: white;
+
+}
+
+#home #btn-features{
+
+    background-color: var(--blue-gray);
+    color: white;
+
+}
+
+#home p{
+    color: gray;
+}
+
+
+#about{
+
+    padding-top: 80px;
+
+}
+
+#about svg{
+
+    
+   height: 26px;
+   width: 26px;
+   fill: var(--primary-color);
+    
+
+}
+
+
+
+#about h4 {
+
+    font-weight: 400;
+
+}
+
+#about span{
+
+    color: var(--primary-color);
+    font-weight: 500;
+
+}
+
+#features{
+
+    padding-top: 80px;
+    background-color : white ;
+    position: relative;    
+    z-index: 5;
+    border-top: 1px solid rgb(242, 242, 242);
+
+
+}
+
+#features ::after{
+    content: "";
+    position: absolute;
+    bottom:  0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    transform: skewY(3deg);
+    transform-origin: left bottom;
+}
+
+
+#features h1{
+
+    font-weight: 400;
+
+}
+
+#features h3{
+
+    font-weight: 400;
+
+}
+
+#features h1 span{
+
+    color: var(--primary-color);
+   
+}
+
+#features svg{
+    fill: var(--primary-color);
+    width: 24px;
+    height: 24px;
+}
+
+#features img{
+    transform: skewX(-10deg);
+    margin: 30px;
+    box-shadow: 0 0 25px var(--blue-gray) ;
+    
+    
+}
+
+
+#experience{
+    padding-top: 80px;
+    background-color: rgb(241, 244, 248) ;
+    z-index: 4;
+    position: relative;
+}
+
+#experience::after{
+
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: bottom left;
+    background-color:  rgb(241, 244, 248) ;
+    z-index: -1;
+    transform: skewY(3deg) ;
+}
+
+#experience h2{
+
+    font-weight: normal;
+
+}
+
+#experience h6{
+
+    font-weight: normal;
+
+}
+
+#experience h2 span {
+
+    color: var(--primary-color);
+
+}
+
+
+#testimonials{
+
+    padding-top: 80px;
+    position: relative;
+    z-index: 3;
+}
+
+#testimonials::after{
+content:"";
+position: absolute;
+background-color: white;
+z-index: -1;
+height: 120px;
+width: 100%;
+transform-origin: bottom left;
+transform: skewY(-3deg);
+}
+
+#testimonials img{
+
+    border-radius: 400px;
+    height: 150px;
+    width: 150px;
+
+}
+
+#testimonials svg{
+    fill: var(--blue-gray);
+    width: 21px;
+    height: 21px;
+    
+ }
+
+ #download{
+
+    background-color: var(--blue-gray);
+    padding-top: 160px;
+    padding-bottom: 75px;
+
+ }
+
+ #download .btn{
+
+    background-color: var(--primary-color);
+    color: white;
+
+ }
+
+ #download .btn:hover,
+ #download .btn:focus
+ {
+    box-shadow: 0 0 6px var(--primary-light) ;
+ }
+
+ #pricing{
+
+     padding-top: 80px;
+
+ }
+
+ #pricing #standard {
+
+    width: 350px;
+    height: 540px;
+    box-shadow:  0 0 25px rgba(0, 0, 0, 0.35);
+    background-color: white;
+    position: relative;
+ }
+
+
+ #pricing #standard .badge{
+
+    background-color: var(--primary-color);
+    
+
+ }
+
+ #pricing  h2{
+
+    font-size: 40px;
+    
+ }
+
+ #pricing  sub{
+
+    font-size: 40px;
+
+}
+
+#pricing #standard .btn{
+
+    background-color: var(--primary-color);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#pricing  .btn:hover,
+#pricing  .btn:focus{
+    transform: translate(0);
+}
+
+#pricing svg{
+    width: 24px;
+    height: 24px;
+    fill: var(--blue-gray);
+}
+
+ #pricing #enterprise{
+     width: 350px;
+     height: 474px;
+     transform: translateY(33px);
+     background-color: white;
+     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+ }
+
+ #pricing #enterprise .badge {
+     background-color: var(--primary-light);
+     color: var(--primary-color);
+     width: 146.86px;  
+ }
+
+ #pricing #enterprise .btn{
+
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+
+ }
+
+ #contact {
+
+    margin-top: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: rgb(241, 244, 248);
+
+ }
+
+ #contact h1 span{
+     color: rgb(66, 177, 150);
+ }
+
+ #contact svg{
+     width: 24px;
+     height: 24px;
+     fill: rgb(66, 177, 150);
+ }
+
+ #contact p{
+     font-size: 21px;
+ }
+
+ #contact .col-8{
+     box-shadow:  0 0 25px rgba(0, 0, 0, 0.35);
+ }
+
+ #contact .col-8:hover{
+     transform: translateY(-3px);
+ }
+
+
+ footer div:nth-child(2) span{
+    color: var(--primary-color);
+}
+
+ footer a:hover{
+    color: var(--primary-color) !important;
+}
+
+
+
+
+@media  screen and (max-width: 992px) {
+   #home  img  {
+
+    display: none;
+
+   }
+
+   #home div{
+
+    margin: auto;
+    text-align: center;
+
+   }
+
+   #about{
+
+    text-align: center;
+
+   }
+
+   #features {
+       text-align: start;
+   }
+
+   #experience img {
+
+    margin-top: 30px;
+
+   }
+
+   #testimonials .d-flex{
+
+    flex-wrap: wrap !important;
+    justify-content: center !important ;
+
+   }
+
+
+  #testimonials .d-flex div{
+
+      width: 50% !important;
+      
+  }
+
+  
+  #contact .container .row .col-lg-6{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+      text-align: center;
+     
+  }
+
+  #contact  form div{
+    
+    text-align: start;
+
+  }
+
+  footer div  {
+    flex-wrap: wrap;
+  }
+
+  footer div div  {
+    width: 50%;
+  }
+
+  footer div:nth-child(1) {
+    text-align: center !important;
+  }
+
+  footer div:nth-child(3){
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+
+  footer div:nth-child(2) p{
+    font-size: large ;
+  }
+
+  footer div:nth-child(3) ul{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+}
+  @media screen and (max-width: 576px){
+
+    #about .row div {
+
+        width: 100%;
+        text-align: start;
+
+    }
+
+    #features img{
+        width: 80%;
+        height: 80%;
+    }
+
+    #contact .col-8{
+        width: 350px;
+    }
+
+    #liPhone{
+        display: flex;
+        justify-content: center !important;
+        flex-direction: column !important;
+      }
+
+  }
+
+
+  @media screen and (max-width : 768px){
+
+        #pricing #standard{
+
+            width: 300px;
+
+        }       
+
+        #pricing #enterprise{
+            width: 300px;
+        }
+
+  }
+
+  @media screen and (max-width : 700px){
+
+    #pricing #main{
+
+       display: block !important;
+       
+
+    }
+
+    #pricing #standard{
+
+        width: 350px;
+        margin: auto;
+
+    }       
+
+    #pricing #enterprise{
+        width: 350px;
+        margin: auto;
+        
+    }
+
+  }
+
+  @media screen and (max-width : 400px){
+
+    #pricing #standard {
+        width: 310px  !important;
+        
+    }       
+
+    #pricing #enterprise{
+        width: 310px  !important;  
+    }
+
+    #contact .col-8{
+        width: 320px;
+    }
+
+  }
+  
+  @media screen and (max-width : 1200px) and (min-width : 993px){
+
+   #features .row .d-flex{
+
+    display: block !important ;
+    text-align: center;
+    width: 100%;
+    
+
+   }
+
+   #features{
+    text-align: center;
+   }
+
+
+   #features img{
+       width: 90%;
+   }
+
+   #contact .col-8{
+    width: 362px;
+   }
+}
+
